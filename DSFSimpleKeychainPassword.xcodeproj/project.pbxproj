@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2380893C21BC8B6700460ED4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380893B21BC8B6700460ED4 /* main.swift */; };
+		2380894521BC8B9B00460ED4 /* DSFSimpleKeychain+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380894321BC8B9A00460ED4 /* DSFSimpleKeychain+UI.swift */; };
+		2380894621BC8B9B00460ED4 /* DSFSimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380894421BC8B9B00460ED4 /* DSFSimpleKeychain.swift */; };
+		2380894E21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380894D21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests.swift */; };
+		2380895521BC8C1E00460ED4 /* DSFSimpleKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380894421BC8B9B00460ED4 /* DSFSimpleKeychain.swift */; };
+		2380895621BC8C1E00460ED4 /* DSFSimpleKeychain+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2380894321BC8B9A00460ED4 /* DSFSimpleKeychain+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,24 @@
 /* Begin PBXFileReference section */
 		2380893821BC8B6700460ED4 /* DSFSimpleKeychainPassword */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSFSimpleKeychainPassword; sourceTree = BUILT_PRODUCTS_DIR; };
 		2380893B21BC8B6700460ED4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2380894321BC8B9A00460ED4 /* DSFSimpleKeychain+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DSFSimpleKeychain+UI.swift"; sourceTree = "<group>"; };
+		2380894421BC8B9B00460ED4 /* DSFSimpleKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSFSimpleKeychain.swift; sourceTree = "<group>"; };
+		2380894B21BC8BB100460ED4 /* DSFSimpleKeychainPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSFSimpleKeychainPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2380894D21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSFSimpleKeychainPasswordTests.swift; sourceTree = "<group>"; };
+		2380894F21BC8BB200460ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2380895321BC8BEF00460ED4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2380895421BC8BEF00460ED4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2380893521BC8B6700460ED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2380894821BC8BB100460ED4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +60,10 @@
 		2380892F21BC8B6700460ED4 = {
 			isa = PBXGroup;
 			children = (
+				2380895421BC8BEF00460ED4 /* LICENSE */,
+				2380895321BC8BEF00460ED4 /* README.md */,
 				2380893A21BC8B6700460ED4 /* DSFSimpleKeychainPassword */,
+				2380894C21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests */,
 				2380893921BC8B6700460ED4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				2380893821BC8B6700460ED4 /* DSFSimpleKeychainPassword */,
+				2380894B21BC8BB100460ED4 /* DSFSimpleKeychainPasswordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +80,28 @@
 		2380893A21BC8B6700460ED4 /* DSFSimpleKeychainPassword */ = {
 			isa = PBXGroup;
 			children = (
+				2380894221BC8B9000460ED4 /* Source */,
 				2380893B21BC8B6700460ED4 /* main.swift */,
 			);
 			path = DSFSimpleKeychainPassword;
+			sourceTree = "<group>";
+		};
+		2380894221BC8B9000460ED4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2380894421BC8B9B00460ED4 /* DSFSimpleKeychain.swift */,
+				2380894321BC8B9A00460ED4 /* DSFSimpleKeychain+UI.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2380894C21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				2380894D21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests.swift */,
+				2380894F21BC8BB200460ED4 /* Info.plist */,
+			);
+			path = DSFSimpleKeychainPasswordTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +124,23 @@
 			productReference = 2380893821BC8B6700460ED4 /* DSFSimpleKeychainPassword */;
 			productType = "com.apple.product-type.tool";
 		};
+		2380894A21BC8BB100460ED4 /* DSFSimpleKeychainPasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2380895021BC8BB200460ED4 /* Build configuration list for PBXNativeTarget "DSFSimpleKeychainPasswordTests" */;
+			buildPhases = (
+				2380894721BC8BB100460ED4 /* Sources */,
+				2380894821BC8BB100460ED4 /* Frameworks */,
+				2380894921BC8BB100460ED4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSFSimpleKeychainPasswordTests;
+			productName = DSFSimpleKeychainPasswordTests;
+			productReference = 2380894B21BC8BB100460ED4 /* DSFSimpleKeychainPasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +152,9 @@
 				ORGANIZATIONNAME = "Darren Ford";
 				TargetAttributes = {
 					2380893721BC8B6700460ED4 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2380894A21BC8BB100460ED4 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,9 +172,20 @@
 			projectRoot = "";
 			targets = (
 				2380893721BC8B6700460ED4 /* DSFSimpleKeychainPassword */,
+				2380894A21BC8BB100460ED4 /* DSFSimpleKeychainPasswordTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2380894921BC8BB100460ED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2380893421BC8B6700460ED4 /* Sources */ = {
@@ -120,6 +193,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2380893C21BC8B6700460ED4 /* main.swift in Sources */,
+				2380894621BC8B9B00460ED4 /* DSFSimpleKeychain.swift in Sources */,
+				2380894521BC8B9B00460ED4 /* DSFSimpleKeychain+UI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2380894721BC8BB100460ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2380894E21BC8BB200460ED4 /* DSFSimpleKeychainPasswordTests.swift in Sources */,
+				2380895521BC8C1E00460ED4 /* DSFSimpleKeychain.swift in Sources */,
+				2380895621BC8C1E00460ED4 /* DSFSimpleKeychain+UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +331,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -256,6 +342,43 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		2380895121BC8BB200460ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				INFOPLIST_FILE = DSFSimpleKeychainPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenford.DSFSimpleKeychainPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		2380895221BC8BB200460ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				INFOPLIST_FILE = DSFSimpleKeychainPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.darrenford.DSFSimpleKeychainPasswordTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -278,6 +401,15 @@
 			buildConfigurations = (
 				2380894021BC8B6700460ED4 /* Debug */,
 				2380894121BC8B6700460ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2380895021BC8BB200460ED4 /* Build configuration list for PBXNativeTarget "DSFSimpleKeychainPasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2380895121BC8BB200460ED4 /* Debug */,
+				2380895221BC8BB200460ED4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
